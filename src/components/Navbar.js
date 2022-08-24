@@ -1,7 +1,7 @@
-import React from "react"
-import logo from "../assets/logo.svg"
-import { FaAlignRight } from "react-icons/fa"
-import PageLinks from "../constants/links"
+import React from "react";
+import logo from "../assets/logo.svg";
+import { FaAlignRight } from "react-icons/fa";
+import PageLinks from "../constants/links";
 const Navbar = ({ toggleSidebar }) => {
   return (
     <nav className="navbar">
@@ -15,7 +15,7 @@ const Navbar = ({ toggleSidebar }) => {
         <PageLinks styleClass="nav-links"></PageLinks>
       </div>
     </nav>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;

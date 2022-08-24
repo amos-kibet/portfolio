@@ -1,6 +1,6 @@
-import React from "react"
-import Layout from "../components/Layout"
-import SEO from "../components/SEO"
+import React from "react";
+import Layout from "../components/Layout";
+import SEO from "../components/SEO";
 
 const contact = () => {
   return (
@@ -9,7 +9,7 @@ const contact = () => {
       <section className="contact-page">
         <article className="contact-form">
           <h3>get in touch</h3>
-          <form action="https://formspree.io/YOUR_ID" method="POST">
+          <form action="https://formspree.io/f/mqkjaqwq" method="POST">
             <div className="form-group">
               <input
                 type="text"
@@ -37,7 +37,7 @@ const contact = () => {
         </article>
       </section>
     </Layout>
-  )
-}
+  );
+};
 
-export default contact
+export default contact;

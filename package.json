@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "private": true,
-  "description": "A simple portfolio site using Gatsby & Strapi",
+  "description": "A simple portfolio site using gatsbyjs",
   "version": "0.0.1",
   "license": "MIT",
   "scripts": {
@@ -34,9 +34,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/amos-kibet/gatsby-portfolio"
-  },
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/amos-kibet/portfolio"
   }
 }
