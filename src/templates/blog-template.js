@@ -1,11 +1,12 @@
-import React from "react"
-import { graphql, Link } from "gatsby"
-import Layout from "../components/Layout"
-import ReactMarkdown from "react-markdown"
-import SEO from "../components/SEO"
+// @ts-nocheck
+import React from "react";
+import { graphql, Link } from "gatsby";
+import Layout from "../components/Layout";
+import ReactMarkdown from "react-markdown";
+import SEO from "../components/SEO";
 
 const ComponentName = ({ data }) => {
-  const { content, title, desc } = data.blog
+  const { content, title, desc } = data.blog;
 
   return (
     <Layout>
@@ -21,8 +22,8 @@ const ComponentName = ({ data }) => {
         </div>
       </section>
     </Layout>
-  )
-}
+  );
+};
 
 export const query = graphql`
   query GetSingleBlog($slug: String) {
@@ -32,6 +33,6 @@ export const query = graphql`
       desc
     }
   }
-`
+`;
 
-export default ComponentName
+export default ComponentName;

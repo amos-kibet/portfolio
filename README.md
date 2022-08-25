@@ -29,7 +29,7 @@ const Component = () => {
 {
       resolve: `gatsby-source-strapi`,
       options: {
-        apiURL: `http://localhost:5000`,
+        apiURL: `http://localhost:5000/api`,
         queryLimit: 1000, // Default to 100
         contentTypes: [`jobs`, `projects`, `blogs`],
         singleTypes: [`about`],
