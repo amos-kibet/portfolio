@@ -9,8 +9,8 @@ require("dotenv").config({
 
 const strapiConfig = {
   apiURL: process.env.STRAPI_API_URL,
-  accessToken: process.env.STRAPI_TOKEN
-}
+  accessToken: process.env.STRAPI_TOKEN,
+};
 module.exports = {
   siteMetadata: {
     title: "Personal Portfolio",
@@ -19,7 +19,7 @@ module.exports = {
     author: "@amos-kibet",
     twitterUsername: "@amoskibet_",
     image: "/twitter-img.png",
-    siteUrl: "https://fly.dev", // to update once deployed
+    siteUrl: "https://fly.dev", // to update url once deployed
   },
   plugins: [
     `gatsby-transformer-sharp`,
