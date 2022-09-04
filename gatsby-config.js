@@ -7,10 +7,10 @@ require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
 });
 
-const strapiConfig = {
-  apiURL: process.env.STRAPI_API_URL,
-  accessToken: process.env.STRAPI_TOKEN,
-};
+// const strapiConfig = {
+//   apiURL: process.env.STRAPI_API_URL,
+//   accessToken: process.env.STRAPI_TOKEN,
+// };
 module.exports = {
   siteMetadata: {
     title: "Personal Portfolio",
@@ -36,9 +36,10 @@ module.exports = {
     {
       resolve: `gatsby-source-strapi`,
       options: {
-        apiURL: `http://localhost:5000/api`,
+        apiURL: process.env.STRAPI_API_URL || "http://localhost:5000/api",
+        accessToken: process.env.STRAPI_TOKEN,
         queryLimit: 1000, // Default to 100
-        contentTypes: [`jobs`, `projects`, `blogs`],
+        collectionTypes: [`jobs`, `projects`, `blogs`], //changed from contentTypes
         singleTypes: [`about`],
       },
     },

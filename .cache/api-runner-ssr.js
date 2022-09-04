@@ -1,11 +1,11 @@
 var plugins = [{
-      plugin: require('/home/kibet/code/learning/js/strapi/portfolio/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
+      plugin: require('/home/kibet/code/learning/js/portfolio/portfolio/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
       options: {"plugins":[]},
     },{
-      plugin: require('/home/kibet/code/learning/js/strapi/portfolio/node_modules/gatsby-plugin-sitemap/gatsby-ssr'),
+      plugin: require('/home/kibet/code/learning/js/portfolio/portfolio/node_modules/gatsby-plugin-sitemap/gatsby-ssr'),
       options: {"plugins":[],"output":"/sitemap.xml","createLinkInHead":true},
     },{
-      plugin: require('/home/kibet/code/learning/js/strapi/portfolio/node_modules/gatsby-plugin-webfonts/gatsby-ssr'),
+      plugin: require('/home/kibet/code/learning/js/portfolio/portfolio/node_modules/gatsby-plugin-webfonts/gatsby-ssr'),
       options: {"plugins":[],"fonts":{"google":[{"family":"Roboto","variants":["400","700"]},{"family":"Open Sans"}]}},
     }]
 // During bootstrap, we write requires at top of this file which looks like:

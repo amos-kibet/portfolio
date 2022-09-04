@@ -5,6 +5,7 @@ import { FaAngleDoubleRight } from "react-icons/fa";
 import { graphql, useStaticQuery } from "gatsby";
 import { Link } from "gatsby";
 
+// changed strapiId to StrapiJobsFieldsEnum, (reverted)
 const query = graphql`
   {
     allStrapiJobs(sort: { fields: strapiId, order: DESC }) {

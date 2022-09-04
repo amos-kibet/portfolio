@@ -25,14 +25,14 @@ const ComponentName = ({ data }) => {
   );
 };
 
-export const query = graphql`
-  query GetSingleBlog($slug: String) {
-    blog: strapiBlogs(slug: { eq: $slug }) {
-      content
-      title
-      desc
-    }
-  }
-`;
+// export const query = graphql`
+//   query GetSingleBlog($slug: String) {
+//     blog: strapiBlogs(slug: { eq: $slug }) {
+//       content
+//       title
+//       desc
+//     }
+//   }
+// `;
 
 export default ComponentName;

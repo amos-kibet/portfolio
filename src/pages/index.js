@@ -48,13 +48,13 @@ export const query = graphql`
     }
     allStrapiBlogs(sort: { fields: date, order: DESC }, limit: 3) {
       nodes {
-        slug
         content
         desc
         date(formatString: "MMMM Do, YYYY")
         id
         title
         category
+        slug
         image {
           childImageSharp {
             fluid {
@@ -66,3 +66,5 @@ export const query = graphql`
     }
   }
 `;
+
+// deleted slug (added back)
